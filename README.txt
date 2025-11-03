@@ -17,12 +17,10 @@ Built using **Power Apps, Power Automate, Dataverse, and Copilot**, it replaces 
 
 # 🧩 System Components
 
----
-
-## 🎨 1. Canvas App (Power Apps)
+## 🎨 Canvas App (Power Apps)
 A modern, user-friendly interface where employees and managers interact with purchase requests.
 
-### ✅ Features
+**Features**
 - Submit new purchase requests  
 - Upload and manage attachments (quotations, documents)  
 - Edit or delete draft requests  
@@ -30,7 +28,7 @@ A modern, user-friendly interface where employees and managers interact with pur
 - Department-based filters and personalized views  
 - Form validations and conditional routing  
 
-### 🖥 Main Screens
+**Main Screens**
 - **Home / Dashboard** – Overview of PRs with key actions  
 - **New Request** – Submit a new PR  
 - **My Requests** – View all PRs submitted by the user  
@@ -38,27 +36,26 @@ A modern, user-friendly interface where employees and managers interact with pur
 
 ---
 
-## 🔄 2. Power Automate Flows
+## 🔄 Power Automate Flows
 Automated workflows ensure a smooth PR lifecycle from submission to approval.
 
-### 🔧 Essential Flows
-#### ✅ **New PR Submission Flow**
-- Triggered when a new PR is created  
-- Sends approval request to the manager  
-- Notifies requester  
+**Essential Flows**
+- **New PR Submission Flow**
+  - Triggered when a new PR is created  
+  - Sends approval request to the manager  
+  - Notifies requester  
 
-#### ✅ **Approval Decision Flow**
-- Manager approves or rejects from email or Teams  
-- Updates PR status in Dataverse automatically  
-- Sends confirmation to requester  
+- **Approval Decision Flow**
+  - Manager approves or rejects from email or Teams  
+  - Updates PR status in Dataverse automatically  
+  - Sends confirmation to requester  
 
 ---
 
-## 🤖 3. Copilot Chatbot  
+## 🤖 Copilot Chatbot  
 Powered by **Copilot Studio / Power Virtual Agents**, the chatbot offers instant access to PR data.
 
-### 💬 Capabilities
-Ask questions like:
+**Capabilities**
 - “Show my pending PRs”  
 - “Get PR details by ID”  
 - “List PRs from the IT department”  
@@ -85,19 +82,19 @@ All PR information is stored securely in **Microsoft Dataverse**, providing:
 
 # 🚀 How the System Works
 
-### 1️⃣ **User Submits Request**  
+**User Submits Request**  
 - Form filled in Canvas App  
 - Record saved to Dataverse  
 
-### 2️⃣ **Workflow Triggered**
+**Workflow Triggered**  
 - Power Automate sends approval request  
 - Manager receives email/Teams notification  
 
-### 3️⃣ **Manager Approves or Rejects**
+**Manager Approves or Rejects**  
 - Approval flow updates Dataverse  
 - Requester is notified automatically  
 
-### 4️⃣ **Chatbot Access (Optional)**
+**Chatbot Access (Optional)**  
 - User asks Copilot for updates  
 - Bot retrieves data via Dataverse connectors  
 
@@ -110,5 +107,3 @@ The Purchase Request Management System delivers a complete automated workflow th
 ✅ Consistent approval workflow  
 ✅ AI-powered chatbot support  
 ✅ Secure Dataverse storage  
-
----
