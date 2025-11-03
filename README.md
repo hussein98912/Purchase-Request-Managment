@@ -76,7 +76,7 @@ All PR information is securely stored in **Microsoft Dataverse**, providing:
 
 ## 🏗 Architecture / Workflow Diagram
 
-![System Workflow](8da37574-24de-4838-b0a3-6d2d361ec184.png)  
+![System Workflow](Digram.png)  
 *Figure: Purchase Request Management System Workflow*  
 
 ---
