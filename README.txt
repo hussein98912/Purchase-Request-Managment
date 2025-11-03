@@ -1,60 +1,75 @@
-The Purchase Request Management System is a digital solution built using Microsoft Power Platform tools to automate and streamline the purchase request (PR) process within an organization.
-It allows users to create, track, and approve purchase requests through a Canvas App, supported by Power Automate workflows and an AI-powered Copilot chatbot for quick access and updates.
+🌟 Purchase Request Management System
 
-System Components
-1. Canvas App (Power Apps)
+A complete digital solution built on Microsoft Power Platform to automate and streamline purchase requests within an organization.
 
-User-friendly interface for submitting and tracking purchase requests.
+📌 Overview
 
-Connects to a SharePoint List or Dataverse table storing all PR details.
+The Purchase Request Management System simplifies how employees submit, track, and approve purchase requests (PRs).
+Built using Power Apps, Power Automate, Dataverse, and Copilot, it replaces manual communication with a fast, automated, and transparent workflow.
 
-Supports form validation, file attachments (e.g., quotations), and conditional approval routing.
+✅ Faster PR submission
+✅ Automated manager approvals
+✅ Real-time request tracking
+✅ Intelligent chatbot access
+✅ Secure storage in Dataverse
 
-Allows department-based views (e.g., see “My Department’s PRs”).
+🧩 System Components
+🎨 1. Canvas App (Power Apps)
 
-Main Screens:
+A modern, user-friendly interface where employees and managers interact with purchase requests.
 
-Home / Dashboard: Overview of requests with edit and delete and show details buttons.
+✅ Features
 
-New Request: Form for submitting a new purchase request.
+Submit new purchase requests
 
-My Requests: Shows the user’s requests and their statuses.
+Upload and manage attachments (quotations, documents)
 
-Approvals: Displays PRs awaiting approval (for managers).
+Edit or delete draft requests
 
+View statuses (Pending, Approved, Rejected, Processing)
 
+Department-based filters and personalized views
 
-2. Power Automate Flows
+Form validations and conditional routing
 
-Automated workflows that handle the process logic, notifications, and approvals.
+🖥 Main Screens
 
-Key Flows:
+Home / Dashboard – Overview of PRs with key actions
 
-New PR Submission Flow
+New Request – Submit a new PR
 
-Triggered when a new record is created.
+My Requests – View all PRs submitted by the user
 
-Sends a notification or approval request to the manager.
+Approvals (Managers Only) – PRs waiting for approval
 
-Approval Decision Flow
+🔄 2. Power Automate Flows
 
-Handles manager approval/rejection.
+Automated workflows ensure a smooth PR lifecycle from submission to approval.
 
-Updates PR status automatically in the data source.
+🔧 Essential Flows
+✅ New PR Submission Flow
 
-Sends email notifications to the requester.
+Triggered when a new PR is created
 
+Sends approval request to the manager
 
+Notifies requester
 
+✅ Approval Decision Flow
 
+Manager approves or rejects from email or Teams
 
-Copilot Chatbot (Power Virtual Agents / Copilot Studio)
+Updates PR status in Dataverse automatically
 
-An intelligent conversational assistant embedded in Teams or the Canvas App.
+Sends confirmation to requester
 
-Capabilities:
+🤖 3. Copilot Chatbot
 
-Responds to user questions like:
+Powered by Copilot Studio / Power Virtual Agents, the chatbot offers instant access to PR data.
+
+💬 Capabilities
+
+Ask questions like:
 
 “Show my pending PRs”
 
@@ -62,32 +77,50 @@ Responds to user questions like:
 
 “List PRs from the IT department”
 
+The bot connects to Dataverse for real-time data retrieval.
 
+🗃 Data Source: Dataverse
 
-Data Source:Microsoft Dataverse
+All PR information is stored securely in Microsoft Dataverse, providing:
 
+Role-based security
 
+Centralized data
 
+Fast querying
 
+Seamless integration with Power Apps and Power Automate
 
-How It Works 
+🚀 How the System Works
+1️⃣ User Submits Request
 
-User Submits Request
+Form filled in Canvas App
 
-Data saved in Dataverse.
+Record saved to Dataverse
 
-Power Automate triggers workflow.
+2️⃣ Workflow Triggered
 
-Manager Receives Approval Request
+Power Automate sends approval request
 
-Email or Teams notification with Approve/Reject options.
+Manager receives email/Teams notification
 
-Request Status Updated Automatically
+3️⃣ Manager Approves or Rejects
 
-The flow updates the record and notifies the requester.
+Approval flow updates Dataverse
 
-Chatbot Access
+Requester is notified automatically
 
-User asks Copilot for request updates.
+4️⃣ Chatbot Access (Optional)
 
-Bot fetches data using dataverse
+User asks Copilot for updates
+
+Bot retrieves data via Dataverse connectors
+
+✅ Summary
+
+The Purchase Request Management System delivers a complete automated workflow that saves time, improves tracking, and enhances transparency across the organization.
+
+✅ Fully digital
+✅ Consistent approval workflow
+✅ AI-powered chatbot support
+✅ Secure Dataverse storage
